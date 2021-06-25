@@ -1,0 +1,31 @@
+<html> 
+<head>
+</head> 
+<body>
+   
+     <h2> Eleições 2021 </h2> <br>
+     <label> Número de eleitores: </label>
+     <input id="s1" type="text"/> <br><br>
+     <label> Número de votos nulos </label>
+     <input id="s2" type="text"/> <br><br>
+     <label> Número de votos em branco </label>
+     <input id="s3" type="text"/> <br><br>
+     <button id="pocentagem" onclick="porcentagemeleitores()">Calcular a porcentagem de votos nulos </button> <br>
+     <button id="pocentagem" onclick="porcentagemeleitores1()">Calcular a porcentagem de votos em branco </button> <br>
+</body>
+<script type="text/javascript">
+    function porcentagemeleitores() {
+         var s1 = document.getElementById("s1").value;
+         var s2 = document.getElementById("s2").value;
+         var s4 = [parseInt(s2) * 100] / parseInt(s1);
+         var s5 = [parseInt(s3) * 100] / parseInt(s1); 
+         alert(s4);
+    }
+    function porcentagemeleitores1() {
+     var s1 = document.getElementById("s1").value;
+     var s3 = document.getElementById("s3").value;
+     var s5 = [parseInt(s3) * 100] / parseInt(s1);
+     alert(s5);
+    }
+</script>
+</html>
